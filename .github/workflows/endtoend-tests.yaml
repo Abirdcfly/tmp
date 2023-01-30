@@ -1,0 +1,16 @@
+name: Sample Network E2E Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  suite:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Build
+        run: |
+          uname -r
+          uname -a
